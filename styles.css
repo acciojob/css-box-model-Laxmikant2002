@@ -1,9 +1,86 @@
 
 /* Your CSS Code here. */
+.box-model-outer {
+	margin: 20px;
+	border: 2px solid #222;
+	position: relative;
+	display: inline-block;
+}
+
+.margin-label {
+	position: absolute;
+	top: 0;
+	left: 10px;
+	font-family: monospace;
+	font-size: 16px;
+	color: #222;
+	background: #fff;
+	z-index: 10;
+}
+
 .box-model {
 	width: 300px;
 	background-color: lightblue;
 	border: 15px solid blue;
 	padding: 50px;
-	margin: 20px;
+	position: relative;
+	box-sizing: content-box;
+}
+
+.border-label {
+	position: absolute;
+	top: 10px;
+	left: 40px;
+	font-family: monospace;
+	font-size: 16px;
+	color: #fff;
+	background: blue;
+	padding: 2px 8px;
+	z-index: 10;
+}
+
+.padding-label {
+	position: absolute;
+	top: 40px;
+	left: 70px;
+	font-family: monospace;
+	font-size: 16px;
+	color: #222;
+	background: #fff;
+	z-index: 10;
+}
+
+.bg-label {
+	position: absolute;
+	top: 40px;
+	right: 70px;
+	font-family: monospace;
+	font-size: 16px;
+	color: #222;
+	background: #fff;
+	z-index: 10;
+}
+
+.content-box {
+	position: relative;
+	height: 100%;
+}
+
+.width-label {
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: monospace;
+	font-size: 16px;
+	color: #222;
+	background: #fff;
+	z-index: 10;
+}
+
+.dotted-box {
+	border: 2px dotted #222;
+	padding: 10px;
+	font-family: monospace;
+	background: transparent;
 }
